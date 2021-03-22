@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
                 double second = Double.parseDouble(givenNumberTwo.getText().toString());
                 double result = first * second;
                 showResult.setText(String.valueOf(result));
+
+                Snackbar.make(v, "Resultatet er " + result + "!", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
 
