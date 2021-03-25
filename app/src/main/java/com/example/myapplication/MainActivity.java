@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         knap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                double first = 0.0,second = 0.0,third = 0.0,fourth = 0.0,fifth = 0.0,sixth = 0.0,seventh = 0.0,eighth = 0.0,ninth = 0.0,tenth = 0.0, Fresult = 0.0;
+
 
                 if(omsætning.getText().toString().isEmpty()){omsætning.setText(String.valueOf(first));}else{first = Double.parseDouble(omsætning.getText().toString());}
                 if(vareforbrug.getText().toString().isEmpty()){vareforbrug.setText(String.valueOf(second));}else{second = Double.parseDouble(vareforbrug.getText().toString());}
